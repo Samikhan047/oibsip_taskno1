@@ -1,0 +1,288 @@
+/*-------------------------
+   GENERAL SETTINGS
+----------------------------*/
+
+
+:root{
+    --brand-color:rgb(136, 12, 136);
+    --side-color:rgb(129, 3, 129);
+    --bg-color:rgb(248, 238, 217);
+}
+
+.sec-bg{
+    background-color:var(--bg-color );
+}
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+hr{
+    text-align: center !important;
+}
+.brand-color{
+    background-color: var(--brand-color);
+}
+.side-color{
+    background-color: var(--side-color);
+}
+
+.waveimg{
+    width: 100%;
+    max-height: 150px;
+
+}
+.row1{
+    height:600px;
+    
+}
+
+h1{
+    color: black;
+    font-size: 50px !important;
+
+}
+
+.borders{
+    border-left: 3px solid purple;
+   
+}
+.button{
+    width: 150px;
+    margin: 10px;
+    height: 40px;
+    color: white;
+    border-radius: 30px;
+    background-color: var(--brand-color);
+}
+span{
+    color: var(--side-color);
+}
+
+.uline::before{
+    content: '';
+    background: var(--brand-color);
+    height: 5px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(70px); 
+    border-radius: 5px;
+}
+
+.uline::after{
+    content: '';
+    background: var(--brand-color);
+    height: 10px;
+    width: 100px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: block;
+    transform: translateY(3px); 
+ 
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--brand-color);
+    border-radius: 10px;
+}
+
+/*-------------------------
+   NAVBAR SECTION
+----------------------------*/
+
+.navbar-nav a{
+   text-align: center;
+}
+a{
+    color: black !important;
+}
+.navbar-nav a:hover{
+    background-color: var(--side-color);
+    color: white !important;
+    border-radius:5px;
+}
+nav{
+    position: fixed !important;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1 !important;
+}
+nav{
+    position:fixed;
+    top: 0px;
+    left: 0px;
+}
+.navbar-brand{
+    animation: simple2 2s ;
+}
+@keyframes simple2{
+   0%{
+    margin-top: -100px;
+   }
+  
+   100%{
+    margin-top: 0px;
+   }
+}
+.navbar-nav a::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: var(--brand-color);
+    border-radius: 5px;
+    transition: all .5s;
+}
+.navbar-nav a:hover::after{
+   width: 100%;
+    background-color: white !important;
+}
+
+
+
+/*-------------------------
+   HEADER SECTION
+----------------------------*/
+
+.img1{
+      height: 600px;
+      width: 800px;
+}
+.imgmark1{
+    animation: simple 1.5s infinite alternate;
+}
+@keyframes simple{
+   0%{
+    margin-top: 0px;
+   }
+   100%{
+    margin-top: -15px;
+   }
+}
+.animate{
+    animation: simple1 2s ;
+}
+@keyframes simple1{
+   0%{
+    margin-left: -550px;
+   }
+   100%{
+    margin-left: 0px;
+   }
+}
+
+/*-------------------------
+   FEATURES SECTION
+----------------------------*/
+
+.bg-img{
+    background-image:url(images/mark7.jpg) ;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card1{
+   
+    
+    transition: all .5s ;
+}
+.card1:hover{
+    box-shadow: 20px 20px 20px  black;
+    background-color: rgb(19, 17, 17) !important;
+    color: white !important;
+}
+
+/*-------------------------
+   PRICING SECTION
+----------------------------*/
+
+.imgi{
+    width: 50px;
+    height: 50px;
+    margin-top: -40px;
+}
+.recommend{
+    color: white !important;
+    background-color: var(--brand-color) !important;
+ 
+}
+.button1{
+    width: 150px;
+    margin: 10px;
+    height: 40px;
+    color: var(--brand-color);
+    border-radius: 30px;
+    background-color: white;
+}
+.pcards{
+    color: var(--brand-color);
+    border: 3px solid var(--brand-color) !important;
+
+}
+
+/*-------------------------
+   REVIEW SECTION
+----------------------------*/
+
+.clientpic{
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50%;
+    margin-top: -30px;
+}
+.span1{
+    line-height: 5px !important;
+}
+
+
+/*-------------------------
+   FAQ SECTION
+----------------------------*/
+
+.accordianborder{
+    border-bottom: 2px solid var(--brand-color) !important;
+}
+
+/*-------------------------
+   CONTACT SECTION
+----------------------------*/
+
+.footer::before{
+    content: '';
+    display: block;
+    width: 80%;
+    height: 2px;
+   margin: auto;
+   margin-bottom: 5px;
+    background-color: white;
+}
+
+.fsize{
+    font-size: 65px;
+    padding-right: 30px;
+    color: rgb(11, 178, 219);    
+}
+i{
+    transition: all .5s;
+}
+i:hover{
+    transform: scale(1.2);
+    text-shadow: 10px 10px 10px black;
+}
